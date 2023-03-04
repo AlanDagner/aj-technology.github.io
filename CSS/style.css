@@ -794,6 +794,32 @@ iframe{
 
 
 @media screen and (max-width:768px) {
+
+    .aj {
+        display: inline-block;
+        position: relative;
+        margin: 35px;
+        font-size: 30px;
+    }
+
+    .aj::after,
+    .aj::before {
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 6px;
+        background-color: red;
+        top: 0.6em;
+    }
+
+    .aj::before {
+        left: -360px;
+    }
+
+    .aj::after {
+        left: 47px;
+    }
+
     .enlace{
         padding-left: 20px;
     }
@@ -874,18 +900,23 @@ iframe{
         position: relative;
     }
 
+    .historia{
+        display: block;
+        position: relative;
+        margin: 0px 300px;
+        margin-top: 20px;
+    }
+
     .img_historia{
         display: block;
         position: relative;
-        margin: 0px 200px;
-        bottom: 70px;
+        margin: 20px 200px;
     }
 
     .fundacion{
         display: block;
         position: relative;
-        margin: 0px 100px;
-        bottom: 50px;
+        margin:20px 100px;
     }
 
     .mision, .vision{
